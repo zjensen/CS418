@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>BioCloud</title>
-</head>
+	<head>
+		<title>BioCloud</title>
+	</head>
 
-<body>
-	<input type="file" accept=".txt,.fasta" />
-	<input type="submit">
-</body>
+	<body>
+		<form ref='uploadForm' 
+			id='uploadForm' 
+			action='http://104.155.187.128:80/upload' 
+			method='post' 
+			encType="multipart/form-data">
+				<input type="file" name="sampleFile" />
+				<input type='submit' value='Upload!' />
+		</form>		
+	</body>
 
 </html>
