@@ -3,9 +3,9 @@ var app = express();
 var PORT = 80;
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+	res.sendFile('index.html');
 });
 
 app.listen(PORT, function () {
-  console.log('Example app listening on port ' + PORT);
+	console.log('Example app listening on port ' + PORT);
 });
